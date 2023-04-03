@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    build: 
+      context: ./Queue
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  producer:
+    build:
+      context: ./Producer
+    volumes:
+      - ./Producer.py:/Producer/Producer.py
+    depends_on:
+      - rabbitmq
+
+  consumer:
+    build:
+      context: ./Consumer
+    volumes:
+      - ./Consumer.py:/Consumer/Consumer.py
+    depends_on:
+      - rabbitmq

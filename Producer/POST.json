@@ -1,0 +1,25 @@
+{
+	"device_id": "abcd-1234-efgh-5678",
+	"client_id": "client-9876",
+	"created_at": "2022-11-15 08:30:12.453890",
+	"data": {
+		"license_id": "license-6543",
+		"preds": [
+			{
+				"image_frame": "iVBORw0KGg...",
+				"prob": 0.852345,
+				"tags": ["animal"]
+			},
+			{
+				"image_frame": "R0lGODlhAQAB...",
+				"prob": 0.123456,
+				"tags": ["animal"]
+			},
+			{
+				"image_frame": "Qk0xAAAAAAAA...",
+				"prob": 0.987654,
+				"tags": ["vehicle"]
+			}
+		] 
+	}
+}
